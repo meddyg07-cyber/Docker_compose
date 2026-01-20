@@ -1,4 +1,0 @@
-Flask
-requests[socks]
-Flask-Cors
-
