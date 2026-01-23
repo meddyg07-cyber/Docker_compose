@@ -1,0 +1,13 @@
+<h1>Users</h1>
+<ul id="list"></ul>
+
+<script>
+fetch("/users")
+.then(r => r.json())
+.then(data => {
+  let ul = document.getElementById("list");
+  data.forEach(u => {
+    ul.innerHTML += `<li>${u[0]} (${u[1]})</li>`;
+  });
+});
+</script>
